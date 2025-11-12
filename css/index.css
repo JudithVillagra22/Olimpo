@@ -1,0 +1,214 @@
+/* ==== ESTILOS GENERALES ==== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f9f8f6;
+  color: #222;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==== NAVBAR ==== */
+header {
+  background-color: #111;
+  padding: 15px 0;
+  color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: #d4af37;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f9f9f9;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .activo {
+  color: #d4af37;
+}
+
+/* ==== HERO ==== */
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.btn-vermas {
+  background-color: #d4af37;
+  border: none;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-vermas:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+/* ==== CATÁLOGO ==== */
+.catalogo {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.catalogo h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.buzo {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+}
+
+.buzo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.buzo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.precio {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background-color: #111;
+  color: #f9f9f9;
+  padding: 50px 10% 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-logo {
+  color: #d4af37;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: #f9f9f9;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d4af37;
+}
+
+/* ==== INFO BANNER ==== */
+.info-banner {
+  background-color: #222;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature {
+  color: #d4af37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.feature i {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero img {
+    height: 50vh;
+  }
+}

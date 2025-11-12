@@ -1,104 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Olimpo\index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   
-    <title>Olimpo & CO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito | Olimpo & CO</title>
+  <link rel="stylesheet" href="C:\Olimpo\css\carrito.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo"></div>
-            <ul>
-                <h1> Olimpo & CO   |   </h1>
-                <a href="C:\Olimpo\inicio.html">Inicio</a>
-                <a href="C:\Olimpo\Ayuda.html">Ayuda</a>
-                <a href="C:\Olimpo\Modelo.html">Modelos</a>
-                <a href="C:\Olimpo\Talles.html">Talles</a>
-                <a href="C:\Olimpo\Colores.html">Colores</a>
-                <a href="C:\Olimpo\Carrito.html">Carrito</a>
-                <form action="/buscar" method="get">
-                    <label for="busqueda"> </label> 
-                    <input type="text" id="busqueda" name="q" placeholder="Search"> <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <div class="carrito"><i class="fa-solid fa-cart-shopping"></i> </div>
-                  
-                </form>
-                
-            </ul>
-           
-        </nav>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Olimpo & CO</h1>
+      <ul class="nav-links">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="Modelo.html">Modelos</a></li>
+        <li><a href="Talles.html">Talles</a></li>
+        <li><a href="Colores.html">Colores</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li><a href="Carrito.html" class="activo">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        
+  <!-- CARRITO -->
+  <main class="carrito-container">
+    <h2>🛒 Tu Carrito de Compras</h2>
 
+    <div class="carrito-items" id="carritoItems">
+      <p class="vacio">Tu carrito está vacío</p>
+    </div>
 
+    <div class="carrito-total">
+      <h3 id="total">Total: $0</h3>
+      <button class="btn-comprar" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
 
+    <div class="agregar-productos">
+      <h3>Agregar Productos</h3>
+      <div class="botones-productos">
+        <button onclick="agregarProducto('Buzo Clásico', 12000)">Buzo Clásico - $12.000</button>
+        <button onclick="agregarProducto('Buzo Oversize', 15000)">Buzo Oversize - $15.000</button>
+        <button onclick="agregarProducto('Buzo Crop', 13500)">Buzo Crop - $13.500</button>
+      </div>
+    </div>
+  </main>
 
-    
-    </header>
-
-
-    <footer class="footer">
-        <div class="footer-container">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2 class="footer-logo">Olimpo & CO</h2>
+        <p><strong>WHATSAPP:</strong> 299-844-5385</p>
+        <p><strong>Tel:</strong> (011) 2196-9441</p>
+        <p><strong>Email:</strong> Olimpo.com.ar</p>
+      </div>
       
-          <div class="footer-column">
-            <h2 class="footer-logo">Olimpo & CO</h2>
-            <p><strong>WHATSAPP:</strong> 299-844-5385</p>
-            <p><strong>Tel:</strong> (011) 2196-9441</p>
-            <p><strong>Email:</strong> Olimpo.com.ar</p>
-          </div>
-          
-          <div class="social-icons">
-            <h2 >Nuestras Redes</h2>
-            <a href="https://wa.me/541158445385" target="_blank" title="WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://www.facebook.com/tu_pagina" target="_blank" title="Facebook" >
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/tu_usuario" target="_blank" title="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-          
+      <div class="social-icons">
+        <h2>Nuestras Redes</h2>
+        <a href="https://wa.me/541158445385" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/tu_pagina" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/tu_usuario" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
 
-
-          <div class="footer-column">
-            <h2>STORES</h2>
-            <div class="store">
-              <strong>Avellaneda</strong>
-              <p>calle avellaneda 1022<br>Capital Federal</p>
-            </div><br>
-          
-           
+      <div class="footer-column">
+        <h2>STORES</h2>
+        <div class="store">
+          <strong>Avellaneda</strong>
+          <p>calle Avellaneda 1022<br>Capital Federal</p>
         </div>
+      </div>
+    </div>
 
+    <section class="info-banner">
+      <div class="features">
+        <div class="feature"><i class="fa-solid fa-bag-shopping"></i><p><strong>COMPRA SEGURA</strong></p></div>
+        <div class="feature"><i class="fa-solid fa-shield-halved"></i><p><strong>GARANTÍA TODO EL AÑO</strong></p></div>
+        <div class="feature"><i class="fa-solid fa-truck-fast"></i><p><strong>ENVÍOS A TODO EL PAÍS</strong></p></div>
+        <div class="feature"><i class="fa-solid fa-coins"></i><p><strong>CUOTAS FIJAS Y EN PESOS</strong></p></div>
+      </div>
+    </section>
+  </footer>
 
-        <section class="info-banner">
-           
-            <div class="features">
-              <div class="feature">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <p><strong>COMPRA SEGURA</strong></p>
-              </div>
-              <div class="feature">
-                <i class="fa-solid fa-shield-halved"></i>
-                <p><strong>GARANTÍA TODO EL AÑO</strong></p>
-              </div>
-              <div class="feature">
-                <i class="fa-solid fa-truck-fast"></i>
-                <p><strong>ENVÍOS A TODO EL PAÍS</strong></p>
-              </div>
-              <div class="feature">
-                <i class="fa-solid fa-coins"></i>
-                <p><strong>CUOTAS FIJAS Y EN PESOS</strong></p>
-              </div>
-            </div>
-          
-           
-          </section>
-      </footer>
+  <!-- SCRIPT -->
+  <script>
+    let carrito = [];
+
+    function agregarProducto(nombre, precio) {
+      carrito.push({ nombre, precio });
+      actualizarCarrito();
+    }
+
+    function eliminarProducto(index) {
+      carrito.splice(index, 1);
+      actualizarCarrito();
+    }
+
+    function actualizarCarrito() {
+      const contenedor = document.getElementById("carritoItems");
+      contenedor.innerHTML = "";
+
+      if (carrito.length === 0) {
+        contenedor.innerHTML = "<p class='vacio'>Tu carrito está vacío 🛍️</p>";
+        document.getElementById("total").textContent = "Total: $0";
+        return;
+      }
+
+      carrito.forEach((item, index) => {
+        const div = document.createElement("div");
+        div.classList.add("producto");
+        div.innerHTML = `
+          <span>${item.nombre}</span>
+          <span>$${item.precio.toLocaleString("es-AR")}</span>
+          <button onclick="eliminarProducto(${index})">Eliminar</button>
+        `;
+        contenedor.appendChild(div);
+      });
+
+      const total = carrito.reduce((sum, item) => sum + item.precio, 0);
+      document.getElementById("total").textContent = "Total: $" + total.toLocaleString("es-AR");
+    }
+
+    function finalizarCompra() {
+      if (carrito.length === 0) {
+        alert("Tu carrito está vacío 🛒");
+        return;
+      }
+      alert("¡Gracias por tu compra en Olimpo & CO!");
+      carrito = [];
+      actualizarCarrito();
+    }
+  </script>
 </body>
-</html>        
+</html>

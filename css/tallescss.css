@@ -1,0 +1,153 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    color: white;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #f5b301;
+}
+
+/* Buscador y carrito */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    width: 150px;
+}
+
+.search-bar button {
+    border: none;
+    background: #f5b301;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.cart-icon i {
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+/* Contenido principal */
+.content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Imagen principal */
+.banner img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Título */
+.titulo-seccion {
+    color: #f5b301;
+    margin: 30px 0 20px;
+    font-size: 1.8em;
+}
+
+/* Tabla */
+.tabla-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+thead {
+    background-color: #f5b301;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #fff7e0;
+    transition: background 0.3s;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}

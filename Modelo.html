@@ -1,56 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Olimpo\css modelo.css">
+    <title>Modelos | Olimpo & CO</title>
+    <link rel="stylesheet" href="C:\Olimpo\css\css modelo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Olimpo & CO</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo"></div>
-            <ul>
-                <h1> Olimpo & CO   |   </h1>
-                <a href="C:\Olimpo\inicio.html">Inicio</a>
-                <a href="C:\Olimpo\Ayuda.html">Ayuda</a>
-                <a href="C:\Olimpo\Modelo.html">Modelos</a>
-                <a href="C:\Olimpo\Talles.html">Talles</a>
-                <a href="C:\Olimpo\Colores.html">Colores</a>
-                <a href="C:\Olimpo\Carrito.html">Carrito</a>
-                <form action="/buscar" method="get">
-                    <label for="busqueda"> </label> 
-                    <input type="text" id="busqueda" name="q" placeholder="Search"> <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <div class="carrito"><i class="fa-solid fa-cart-shopping"></i> </div>
-                  
-                </form>
-                
+        <nav class="navbar">
+            <div class="logo">Olimpo & CO</div>
+            <ul class="nav-links">
+                <li><a href="inicio.html" class="activo">Inicio</a></li>
+                <li><a href="Modelo.html">Modelos</a></li>
+             <li><a href="Talles.html">Talles</a></li>
+                <li><a href="Colores.html">Colores</a></li>
+          <li><a href="Ayuda.html">Ayuda</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
             </ul>
-           
+
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
         </nav>
-       
     </header>
 
-    <main>
-        <div class="productos"> 
-            <img src="imagenes/buzo1.jfif" alt="Producto 1">
-            <img src="imagenes/buzo2.jpeg" alt="Producto 2">
-            <img src="imagenes/buzo3.jpg" alt="Producto 3" >
-            <img src="imagenes/buzo4.jpeg" alt="Producto 4">
-            <img src="imagenes/buzo5.jpeg" alt="Producto 5">
-            <img src="imagenes/buzo6.jpg" alt="Producto 6">
-            <img src="imagenes/buzo7.jpg" alt="Producto 7">
-            <img src="imagenes/buzo8.jpg" alt="Producto 8">
-            <img src="imagenes/buzo7.jpg" alt="Producto 9">
-            <img src="imagenes/buzo8.jpg" alt="Producto 10">
+    <main class="content">
+        <h2 class="titulo-seccion">Nuestros Modelos</h2>
+        <div class="productos">
+            <div class="card">
+                <img src="imagenes/buzo1.jfif" alt="Buzo 1">
+                <h3>Buzo clásico</h3>
+                <p>Comodidad y estilo en un solo diseño.</p>
+            </div>
 
+            <div class="card">
+                <img src="imagenes/buzo2.jpeg" alt="Buzo 2">
+                <h3>Buzo oversize</h3>
+                <p>Ideal para un look urbano y relajado.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/buzo3.jpg" alt="Buzo 3">
+                <h3>Buzo deportivo</h3>
+                <p>Perfecto para entrenar o para el día a día.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/buzo4.jpeg" alt="Buzo 4">
+                <h3>Buzo con capucha</h3>
+                <p>Clásico, abrigado y siempre a la moda.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/buzo5.jpeg" alt="Buzo 5">
+                <h3>Buzo cropped</h3>
+                <p>Estilo juvenil con diseño moderno.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/buzo6.jpg" alt="Buzo 6">
+                <h3>Buzo térmico</h3>
+                <p>Ideal para el invierno y actividades al aire libre.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/buzo7.jpg" alt="Buzo 7">
+                <h3>Buzo minimalista</h3>
+                <p>Diseño simple y elegante para todos los días.</p>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/buzo8.jpg" alt="Buzo 8">
+                <h3>Buzo estampado</h3>
+                <p>Originalidad y color en cada prenda.</p>
+            </div>
         </div>
-      
     </main>
-   
-        
-    
-</body>  
 
+    <footer>
+        <p>© 2025 Olimpo & CO. Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,184 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === NAVBAR === */
+header {
+  background: #111;
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffd700;
+}
+
+.icons a {
+  color: white;
+  font-size: 1.3em;
+}
+
+/* === MAIN === */
+main {
+  padding: 60px 10%;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.colores-section h2 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.colores-section p {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.colores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 15px;
+}
+
+.colores-grid div {
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.colores-grid div:hover {
+  transform: scale(1.1);
+}
+
+/* === FOOTER === */
+.footer {
+  background: #111;
+  color: white;
+  padding: 40px 10%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column h2 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* === INFO BANNER === */
+.info-banner {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.features div {
+  text-align: center;
+}
+
+.features i {
+  font-size: 1.8em;
+  color: #ffd700;
+  margin-bottom: 8px;
+}
+
+
+/* Buscador y carrito */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    width: 150px;
+}
+
+.search-bar button {
+    border: none;
+    background: #f5b301;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.cart-icon i {
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
